@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <link href="https://fonts.googleapis.com/css?family=Luckiest+Guy" rel="stylesheet">
+ 
+</head>
+<body>
+
+    <section>
+        <h1> Generate your name with API</h1>
+        <div class="centerdiv">
+           <div class="details">
+          <label>ENTER YOUR NAME</label><br>
+          <input type="text" name=" " id="nameid">
+           </div> 
+           <div class="imgdiv">
+            <img src ="1.webp" width="200" height ="auto" class="imgchange">
+            </div>
+           <button>submit</button>
+        </div>
+    </section>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script>
+   <script>
+  $(document).ready(function(){
+    $('button').click(function(){
+        const name = $('#nameid').val();
+        alert(name);
+        $('.imgchange').attr('src','https://ui-avatars.com/api/?name='+name );
+    });
+  });
+
+   </script>
+    <body>
+    
+</body>
+</html>
